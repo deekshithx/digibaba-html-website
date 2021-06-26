@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   
+  
+    
+  
+    
+  
+  
   font-family: 'Poppins', sans-serif;
   
 }
@@ -162,6 +168,8 @@
 
 
 
+
+
 #banner{
   background: url(images.png/banner.pnf.jpg);
   background-size: cover;
@@ -250,6 +258,7 @@ body section  {
   align-items: center;
   flex-wrap: wrap;
   min-height: 50vh;
+
   
 
 background: #232427;
@@ -439,27 +448,81 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 
   
 }
-*/
+*
+@media screen {
   
+} (min-width: 770px){
+  
+.container{
+  grid-template-columns: repeat(2,1fr);
+}/*
 
 
-/*-------------blog------------*/
+/*----------------------------footer--------------------------------*/
 
-#blog section {
 
-  width: 100%;
-  padding: 50px 0;
+body{
+  background: #fcfcfc;
+}
+footer{
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 50px;
+  color: #fff;
+  min-height: auto;
+  
+}
+.footer-content{
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 100px;
-  padding-top: 0px;
-
-
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
 }
 
 
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  padding-top: 70px;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
 
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+  
+  
+
+
+  
 
 
 

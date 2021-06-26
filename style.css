@@ -21,7 +21,7 @@
   position: relative;
 }
 .wrapper .menu-btn{
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 10px;
   background: #4a4a4a;
@@ -41,7 +41,7 @@
   left: 247px;
 }
 .wrapper .menu-btn i{
-  position: absolute;
+  position: fixed;
   transform: none;
   font-size: 23px;
   transition: all 0.3s ease;
@@ -56,7 +56,9 @@
 #btn:checked ~ .menu-btn i.fa-bars{
   opacity: 0;
   transform: rotate(180deg);
+  left: 10px;
 }
+/*--------------------------------------side nav bar------------------*/
 #sidebar{
   position: fixed;
   background: #404040;
@@ -164,6 +166,38 @@
   font-size: 20px;
   font-weight: 300;
 }
+@media screen and (max-width:770px) {
+  #sidebar{
+  position: fixed;
+  background: #404040;
+  height: 100%;
+  width: 200px;}
+
+  #btn:checked ~ .menu-btn{
+    left: 170px;}
+    .wrapper .menu-btn{
+      position: fixed;
+      left: 20px;
+      top: 10px;
+      background: #4a4a4a;
+      color: #fff;
+      height: 45px;
+      width: 45px;
+      z-index: 9999;
+      border: 1px solid #333;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+ 
+}
+
+  
+
 
 
 
@@ -175,6 +209,12 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+@media (min-width: 320px) and (max-width: 600px){
+  #banner{
+   width: 100%;
+   height: 100%;
+  }
 }
 
 
@@ -298,6 +338,7 @@ background: #232427;
 
 
 .container .card{
+  mask-position: center;
   position: relative;
   min-width: 320px;
   height: 440px;

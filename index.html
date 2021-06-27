@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
       <meta name="viewport" content="width =device-width, initial-scale=1">
 
    </head>
@@ -53,7 +54,7 @@
             <li><a href="#About"><i class="fas fa-user"></i>About us</a></li>
             <li><a href="#footer"><i class="fas fa-envelope"></i>Contact us</a></li>
                <li><a href="#"><i class="fas fa-sliders-h"></i>Clients</a></li>
-               <li><a href="#"><i class="fas fa-address-book"></i>Services</a></li>
+               <li><a href="#features"><i class="fas fa-address-book"></i>Services</a></li>
                <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
                
                
@@ -95,9 +96,9 @@
         
       
          <div class="about-text">
-            <h1>ABOUT US </h1><br>
-            <P>worldwide we help business gain more leads and awaerness by ressessing and<br> improving their online presence 
-               we provide unique web design/app combined with an extensive<br> search engine optimization online advertising
+            <h1>WHO ARE WE </h1>
+            <P>worldwide we help business gain more leads and awarness by ressessing and improving their online presence 
+               we provide unique web design/app combined with an extensive search engine optimization online advertising
             and content strategy to ensure business growth </P>
 
 
@@ -114,7 +115,7 @@
 <section id="Features">
    <div class="title-text">
       <h1>OUR SERVICES</h1>
-      <p>why choose use</p>
+     
    </div>
    
    <section id="card">
@@ -124,9 +125,8 @@
             <div class="content">
             
                <h2>01</h2>
-               <h3>card one</h3>
-               <p>bhejkbjhh bhgasfkjbg bgbasdh,jggwq gygyugew guguigqwdjhyug byugwqdbg
-                   fyfvwdvfwd vyufqwd yfqwuiyufqwhvtdw gbbad 
+               <h3>BRANDING</h3>
+               <p>Create a powerful visual identity for your brand. Combining decades of experience growing brands into household names and a future-focused approach, we deliver an iconic design that sticks into people's minds and makes your brand noticable.
                </p>
                <a href="#">read more</a>
 
@@ -141,10 +141,8 @@
          <div class="content">
 
             <h2>02</h2>
-            <h3>card two</h3>
-            <p>bhejkbjhh bhgasfkjbg bgbasdh,jggwq gygyugew guguigqwdjhyug byugwqdbg
-                fyfvwdvfwd vyufqwd yfqwuiyufqwhvtdw gbbad 
-            </p>
+            <h3>WEB & DIGITAL</h3>
+            <p> Create a powerful visual identity for your brand. Combining decades of experience growing brands into household names and a future-focused approach, we deliver an iconic design that sticks into people's minds and makes your brand noticable</p>
             <a href="#">read more</a>
 
          </div>
@@ -157,9 +155,9 @@
       <div class="box">
          <div class="content">
             <h2>03</h2>
-            <h3>card three</h3>
-            <p>bhejkbjhh bhgasfkjbg bgbasdh,jggwq gygyugew guguigqwdjhyug byugwqdbg
-                fyfvwdvfwd vyufqwd yfqwuiyufqwhvtdw gbbad 
+            <h3>WEB & DIGITAL
+            </h3>
+            <p>Deliver exceptional digital experiences. We transform your online presence - delivering secure, user-friendly, cutting-edge websites and cross-platform mobile apps for both your consumers and yourself. The end-user is at the brain of every decision we make.
             </p>
             <a href="#">read more</a>
 
@@ -174,8 +172,8 @@
          <div class="box">
             <div class="content">
                <h2>04</h2>
-               <h3>card four</h3>
-               <p>we devlpo we create we gain we create relationship facebook instgram whatsapp and it solution we provide te ginucal solution and it solution s</p>
+               <h3>SOCIAL MEDIA </h3>
+               <p>The power of social is growing exponentially. On average, people now spend 2 hours and 24 minutes on social media every day, making it the most powerful way of reaching out to your customers. we making your social presence to connect with your customers. </p>
                <a href="#">read more</a>
             </div>
          </div>
@@ -187,8 +185,9 @@
          <div class="box">
             <div class="content">
                <h2>05</h2>
-               <h3>card five</h3>
-               <p>we devlpo we create we gain we create relationship facebook instgram whatsapp and it solution we provide te ginucal solution and it solution s</p>
+               <h3>MOBILE APP DEVELOPMENT
+               </h3>
+               <p>At DigiBaba we believe that anyone should be able to turn their idea into an incredible custom Android, iOS & Web app, and launch it into the world. We provide front pricing to help founders and businesses of all sizes turn their ideas into a reality, through software design, development, and product launch services.</p>
                <a href="#">read more</a>
             </div>
          </div>
@@ -201,23 +200,34 @@
                <h2>06</h2>
                <h3>card </h3>
                <p>we devlpo we create we gain we create relationship facebook instgram whatsapp and it solution we provide te ginucal solution and it solution s</p>
-               <a href="#">read more</a>
+               <a href="#">read more</a> 
+               
+               
             </div>
          </div>
       </div>
    </div>
 </section>
 
+
+
+
+
    
    
    
         <!--------------------------footer bar-------------------------------------------------------->
+        
    <section id="footer">
+      <div id="overlay"></div>
 <footer>
    <div class="footer-content">
       <h3>digibaba.in</h3> <br>
       <p>Wind Tunnel Road, Bengaluru-560017<br>
-      CONTACT NUMBER:-+917483958323/ +918892525859<br>    
+         
+         <a href="tel://+917483958323"> click to contact +917483958323</a><br>
+         <a href="tel://+918892525859"> click to contact +918892525859 </a>  <br>
+
       MAIL:-digibaba.india@gmail.com
       
    </div>
@@ -232,14 +242,12 @@
   
 </footer>
 </section>
-
-
-</body>
-
 <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
    var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 500,
+	speed: 50,
 	speedAsDuration: true
-
+});
 </script>
+</body>
 </html>

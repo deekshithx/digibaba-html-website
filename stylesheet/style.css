@@ -172,8 +172,10 @@
   position: fixed;
   background: #404040;
 
-  height: 110%;
-  width: 200px;}
+  height: 105%;
+  width: 200px;
+  margin-top: 4.9rem; 
+}
 
   #btn:checked ~ .menu-btn{
     left: 200px;}
@@ -220,23 +222,26 @@
 }
 .introduction-area {
 	margin-bottom: -0.8rem;
+  
 }
 
 .introduction-area .welcome-image video {
 	width: 100%;
 }
 @media (min-width: 320px) and (max-width: 600px){
-
   .introduction-area {
-    margin-bottom: -3.8rem;
-    margin-top: -3.6rem;
+    margin-bottom: -5.5rem;
+    margin-top: -5.5rem;
   }
   .introduction-area .welcome-image video {
     width: 100%;
     height: 100%;
   }
+  
 
 }
+
+
 
 
 
@@ -293,12 +298,14 @@
   .about-text h1{
     font-size: 32px;
     font-style: normal;
-    margin-top: -50px;
+    margin-top: -5px;
+    
    
     
     
   
   }
+  
   
 
 }
@@ -661,8 +668,8 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: bottom;
-    padding: 35px;
-    
+    padding: 20px;
+   
     
    
   }

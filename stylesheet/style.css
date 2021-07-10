@@ -172,9 +172,12 @@
   position: fixed;
   background: #404040;
 
-  height: 105%;
+  height: 90%;
   width: 200px;
   margin-top: 4.9rem; 
+ 
+ overflow-x: auto;
+ overflow-y:auto ;
 }
 
   #btn:checked ~ .menu-btn{

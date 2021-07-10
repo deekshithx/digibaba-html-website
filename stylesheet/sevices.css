@@ -164,12 +164,11 @@
     position: fixed;
     background: #404040;
   
-    height: 85%;
+    height: 90%;
     width: 200px;
-   top: -10rem;
    
-   overflow-x: auto;
-   overflow-y:auto ;
+   
+   
   }
   
 
@@ -388,7 +387,7 @@ body.disabled{
 
 .features-sec {
 	padding: 5rem 3rem;
-	background-color: rgb(252, 250, 250);
+	background-color: #fff;
 }
 
 .features-sec h2 {
@@ -520,36 +519,7 @@ body.disabled{
 	.devices-sec .device-box .device-img {
 		margin: 2rem 0 0;
 	}
-	#arrowAnim {
-		margin: 0.5rem 0 0 1rem;
-	}
-	.arrow {
-		width: 1.5rem;
-		height: 1.5rem;
-	}
-	.demo-sec {
-		padding: 2rem;
-	}
-	.demo-sec p {
-		width: 100%;
-		margin-bottom: 2rem;
-	}
-	.reviews {
-		padding: 2rem;
-	}
-	.pricing .pricing-price i {
-		left: 1.8rem;
-	}
-	.pricing .entp-btn {
-		margin: 0;
-		position: relative;
-		bottom: 0;
-	}
-	.faq-area {
-		padding: 0;
-	}
 }
-
 
 
 

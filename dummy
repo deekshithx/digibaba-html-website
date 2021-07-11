@@ -1,0 +1,646 @@
+/*
+.header{
+  height: 100vh;
+  
+  background-image: url(images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+@media (min-width: 320px) and (max-width: 600px){
+  #banner{
+   width: 100%;
+   height: 100%;
+  }
+  
+}*/
+/*------------------------------------------dummy footer----------------------------------------------
+.bottom1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.bottom1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.bottom1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.bottom-content{
+  display: flex;
+}
+.bottom-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .bottom{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .bottom:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .bottom:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .bottom p{
+  text-align: justify;
+}
+.left .bottom .social{
+  margin: 20px 0 0 0;
+}
+.left .bottom .social a{
+  padding: 0 2px;
+}
+.left .bottom .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .bottom .social a span:hover{
+  background: #f12020;
+}
+.center .bottom .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .bottom .fas:hover{
+  background: #f12020;
+}
+.center .bottom .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .bottom .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.downfooter center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.downfooter center span{
+  color: #656565;
+}
+.downfooter center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.downfooter center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}*/
+/*custom scroll bar 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::selection{
+background: rgb(0,123,255,0.3);
+}
+.content{
+max-width: 1250px;
+margin: auto;
+padding: 0 30px;
+}
+.navbar{
+position: fixed;
+width: 100%;
+z-index: 2;
+padding: 25px 0;
+transition: all 0.3s ease;
+}
+.navbar.sticky{
+background: #1b1b1b;
+padding: 10px 0;
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.navbar .logo a{
+color: #fff;
+font-size: 30px;
+font-weight: 600;
+text-decoration: none;
+}
+.navbar .menu-list{
+display: inline-flex;
+}
+.menu-list li{
+list-style: none;
+}
+.menu-list li a{
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+color: #007bff;
+}
+
+.icon{
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+display: none;
+}
+.menu-list .cancel-btn{
+position: absolute;
+right: 30px;
+top: 20px;
+}
+
+
+
+@media (max-width: 868px) {
+body.disabled{
+  overflow: hidden;
+  position: fixed;
+}
+.icon{
+  display: block;
+}
+.icon.hide{
+  display: none;
+}
+.navbar .menu-list{
+  position: fixed;
+  height: 120vh;
+  width: 100%;
+  max-width: 100px;
+  min-width: 100px;
+  left: -100%;
+  top: 0px;
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+  background: #222;
+  transition: all 0.3s ease;
+}
+.navbar.show .menu-list{
+  left: 50%;
+}
+.navbar .menu-list li{
+  margin-top: 45px;
+}
+.navbar .menu-list li a{
+  font-size: 23px;
+  margin-left: -100%;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navbar.show .menu-list li a{
+  margin-left: 0px;
+}
+}
+@media (max-width: 380px) {
+.navbar .logo a{
+  font-size: 27px;
+}
+}
+/*-------------------------------------------branding---------------------
+.about{
+  padding: 30px 0;
+  background: #1b1b1b;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 25rem;
+  color: #aaa7a7;
+}
+
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+  color: #aaa7a7;
+}
+.branding{
+  padding: 30px 0;
+  background: #232427;
+  
+}
+.contentbra{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+.branding .title{
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-left: 28rem;
+  color: #aaa7a7;
+}
+
+.branding p{
+  padding-top: 20px;
+  text-align: justify;
+  margin-left: 50px;
+  color: #aaa7a7;
+}
+
+
+
+
+
+
+
+
+.WEBDIGITAL{
+  padding: 30px 0;
+  background: #999898;
+}
+.contentweb{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+.WEBDIGITAL .title{
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-left: 37rem;
+}
+.WEBDIGITAL p{
+  padding-top: 20px;
+  text-align: justify;
+  margin-left: 50px;
+}
+.WEBDIGITAL h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 3rem;
+
+}
+
+.DIGITALMEDIA{
+  padding: 30px 0;
+  background: #1b1b1b;
+}
+.contentdig{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+.DIGITALMEDIA .title{
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-left: 27rem;
+  color: #aaa7a7;
+}
+.DIGITALMEDIA p{
+  padding-top: 20px;
+  text-align: justify;
+  margin-left: 50px;
+  color: #aaa7a7;
+}
+
+.DIGITALMEDIA h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 3rem;
+  color: #aaa7a7;
+}
+
+
+
+
+
+
+
+.SOCIALMEDIA{
+  padding: 30px 0;
+  background: #232427;
+  
+}
+.contentsoc{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+.SOCIALMEDIA .title{
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 50px;
+  margin-left: 38rem;
+  color: #aaa7a7;
+}
+
+.SOCIALMEDIA p{
+  padding-top: 20px;
+  text-align: justify;
+  margin-left: 50px;
+  color: #aaa7a7;
+
+}
+
+
+
+
+
+.MOBILEAPPDEVELOPMENT{
+  padding: 30px 0;
+  background: #999898;
+  
+}
+.contentmob{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+.MOBILEAPPDEVELOPMENT .title{
+  font-size: 38px;
+  font-weight: 700;
+  
+  margin-left: 33rem;
+}
+.MOBILEAPPDEVELOPMENT p{
+  padding-top: 20px;
+  text-align: justify;
+  margin-left: 50px;
+}*/
+/*-------------------------------------------------------------------------------------------------------------------------------
+ @media (max-width: 1230px) {
+  .about .title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 50px;
+    
+  }
+  .branding .title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 50px;
+    padding: 0 60px;
+    
+    
+  }
+  .contentbra{
+    padding: 0 40px;
+    margin-left: -50px;
+
+  }
+  .WEBDIGITAL .title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 75px;
+    
+  }
+  .WEBDIGITAL h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+  
+  }
+  .contentweb{
+    padding: 0 60px;
+    margin-left: -50px;
+
+  }
+  .DIGITALMEDIA .title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 50px;
+    padding-left: 20px;
+    
+  }
+  .DIGITALMEDIA h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+  
+  }
+  .contentdig{
+    padding: 0 60px;
+    margin-left: -50px;
+
+  }
+  .SOCIALMEDIA .title{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 70px;
+  }
+  .content{
+    padding: 0 60px;
+    margin-left: -50px;
+
+  }
+   
+    .MOBILEAPPDEVELOPMENT .title{
+      font-size: 28px;
+      font-weight: 700;
+      margin-left: 70px;
+      
+    }
+    .contentmob{
+      padding: 0 60px;
+      margin-left: -50px;
+
+    }
+ }*/
+html--------------------------------------------------------------------------------------------------------
+<!---------------------------------------------------------------------------
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title">OUR SERVICES</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p>
+      
+  </div>
+  </div>
+  <section id class="branding">
+    <div class="contentbra">
+
+    <div class="title">BRANDING</div>
+    <p>A brand is more than a logo. It brings credibility to your company with consistent messaging and visuals that define your work for various audiences. Let’s draw in new customers with a look that brings your brand to life. </p>
+
+    </div>
+  </div>
+  </section>
+    
+<section id class="WEBDIGITAL">
+  <div class="title">WEB & DIGITAL</div>
+  <div class="contentweb">
+  <p>We believe in strategy in process. What makes us different from other website design agencies is that we take the time to understand your customer. We take the information gathered from the previous steps of UX/UI iteration and our in-house team creates a design that showcases your brand. By utilizing digital marketing with UI, we are able to create usable and visually appealing websites, apps, and more to show off your brand.
+  </p><br>
+  <h3>Bringing our A game through:</h3>
+  <p>
+
+    *Secure hosting<br>
+    *Responsive mobile friendly design<br>
+    *Illustrations and animations<br>
+    *Content development assistance<br>
+    *Multi-language integration<br>
+    *+ we design really cool sites</p>
+
+  </div>
+</div>
+</section>
+<section id class="DIGITALMEDIA">
+  <div class="contentdig">
+  <div class="title">DIGITAL MEDIA</div>
+  <p>Digital advertising
+    Take action on getting your business noticed -- but make sure you’re doing it the right way! How your business is promoted, the way customers experience this awareness, and getting your goals across are crucial to the digital marketing process. Our team works to understand your direction and to create an effective campaign strategy for your business, so all you have to worry about is gaining more attention. </p><br>
+<h3>GOALS</h3>
+<p>
+  *Reaching your target audience<br>
+  *Social media platform and keyword analysis<br>
+ *Geographic and market research<br>
+  *Flexable and transparent advertising budgeting<br>
+  *Aligned and compelling messages</p>
+  </div>
+</div>
+</section>
+<section id class="SOCIALMEDIA">
+  <div class="title">SOCIAL MEDIA</div>
+  <div class="contentsoc">
+  <p>ugucjbahgjb hahsbhugubsuau gcyu guygcuygyucsa gg sucyguigugiucs ggygyugugusaug gu sguuguigusa gugugasyucg y gyu sagyugyugugyusa g yusxayuy </p>
+
+  </div>
+</div>
+</section>
+<section id class="MOBILEAPPDEVELOPMENT">
+  <div class="title">MOBILE APP DEVELOPMENT</div>
+  <div class="contentmob">
+  <p>We can convert any of your creative idea to a successful iOS, Andri0d and Web app. </p>
+
+  </div>
+</div>
+</section>
+------>
+<!-------------------------------------------------------dummynav----
+  
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">DigiBABA.</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="index.html#footer">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>---->

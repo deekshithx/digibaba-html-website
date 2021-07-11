@@ -1,4 +1,4 @@
-@import url('https://fonts.googlepis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+
 
 *{
   margin: 0;
@@ -13,6 +13,13 @@
   
   font-family: 'Poppins', sans-serif;
   
+}
+html.body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 /*--side navator bar---*/
 .wrapper{
@@ -172,19 +179,19 @@
   position: fixed;
   background: #404040;
 
-  height: 90%;
-  width: 200px;
-  margin-top: 4.9rem; 
+  height: 100%;
+  width: 250px;
+  margin-top: 5rem; 
  
  overflow-x: auto;
  overflow-y:auto ;
 }
 
   #btn:checked ~ .menu-btn{
-    left: 200px;}
+    left: 250px;}
     .wrapper .menu-btn{
       position: fixed;
-      left: 20px;
+      left: 30px;
       top: 10px;
       background: #4a4a4a;
       color: #fff;
@@ -202,23 +209,7 @@
     
  
 }
-/*
-.header{
-  height: 100vh;
-  
-  background-image: url(images/banner.jpg);
-  background-position: center;
-  background-size: cover;
-  
-}
 
-@media (min-width: 320px) and (max-width: 600px){
-  #banner{
-   width: 100%;
-   height: 100%;
-  }
-  
-}*/
 /*-------------------------video---------*/
 .navbar {
 	background-color: transparent;
@@ -550,7 +541,7 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 
 
 }
-/*
+/**
 .container .card:nth-child(1) .box .content a{
   background: #2196f3;
 
@@ -563,15 +554,9 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.2)
   background: #97dc47;
 
   
-}
-*
-@media screen {
-  
-} (min-width: 770px){
-  
-.container{
-  grid-template-columns: repeat(2,1fr);
-}/*
+}*/
+
+
 
 
 /*----------------------------footer--------------------------------*/
@@ -678,172 +663,7 @@ footer{
    
   }
 }
-/*------------------------------------------dummy footer----------------------------------------------
-.bottom1{
-  position: relative;
-  margin: 130px auto;
-  text-align: center;
-  padding: 0 20px;
-}
-.bottom1 .text{
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #202020;
-}
-.bottom1 .p{
-  font-size: 2.1875rem;
-  font-weight: 600;
-  color: #202020;
-}
-footer{
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  background: #111;
-}
-.bottom-content{
-  display: flex;
-}
-.bottom-content .box{
-  flex-basis: 50%;
-  padding: 10px 20px;
-}
-.box h2{
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.box .bottom{
-  margin: 20px 0 0 0;
-  position: relative;
-}
-.box .bottom:before{
-  position: absolute;
-  content: '';
-  top: -10px;
-  height: 2px;
-  width: 100%;
-  background: #1a1a1a;
-}
-.box .bottom:after{
-  position: absolute;
-  content: '';
-  height: 2px;
-  width: 15%;
-  background: #f12020;
-  top: -10px;
-}
-.left .bottom p{
-  text-align: justify;
-}
-.left .bottom .social{
-  margin: 20px 0 0 0;
-}
-.left .bottom .social a{
-  padding: 0 2px;
-}
-.left .bottom .social a span{
-  height: 40px;
-  width: 40px;
-  background: #1a1a1a;
-  line-height: 40px;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-.left .bottom .social a span:hover{
-  background: #f12020;
-}
-.center .bottom .fas{
-  font-size: 1.4375rem;
-  background: #1a1a1a;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.center .bottom .fas:hover{
-  background: #f12020;
-}
-.center .bottom .text{
-  font-size: 1.0625rem;
-  font-weight: 500;
-  padding-left: 10px;
-}
-.center .bottom .phone{
-  margin: 15px 0;
-}
-.right form .text{
-  font-size: 1.0625rem;
-  margin-bottom: 2px;
-  color: #656565;
-}
-.right form .msg{
-  margin-top: 10px;
-}
-.right form input, .right form textarea{
-  width: 100%;
-  font-size: 1.0625rem;
-  background: #151515;
-  padding-left: 10px;
-  border: 1px solid #222222;
-}
-.right form input:focus,
-.right form textarea:focus{
-  outline-color: #3498db;
-}
-.right form input{
-  height: 35px;
-}
-.right form .btn{
-  margin-top: 10px;
-}
-.right form .btn button{
-  height: 40px;
-  width: 100%;
-  border: none;
-  outline: none;
-  background: #f12020;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: .3s;
-}
-.right form .btn button:hover{
-  background: #000;
-}
-.downfooter center{
-  padding: 5px;
-  font-size: 0.9375rem;
-  background: #151515;
-}
-.downfooter center span{
-  color: #656565;
-}
-.downfooter center a{
-  color: #f12020;
-  text-decoration: none;
-}
-.downfooter center a:hover{
-  text-decoration: underline;
-}
-@media screen and (max-width: 900px) {
-  footer{
-    position: relative;
-    bottom: 0px;
-  }
-  .main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .main-content .box{
-    margin: 5px 0;
-  }
-}*/
+
 
 
 

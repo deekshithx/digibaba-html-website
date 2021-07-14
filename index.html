@@ -8,10 +8,26 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PW8GFW6N8W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PW8GFW6N8W');
+</script>
+
       <meta name="viewport" content="width =device-width, initial-scale=1">
 
    </head>
-   <body>
+   <body onload="myfunction()">
+
+      <div id="center">
+         <div class="ring"></div>
+         <span>loading...</span>
+      </div>
       
    
 
@@ -303,6 +319,21 @@
 	speed: 50,
 	speedAsDuration: true
 });
+
+</script>
+<script>
+   var preloader = document.getElementById('center');
+    function myfunction(){
+       preloader.style.display = 'none';
+    }
+  
+       
+
+ 
+
 </script>
 </body>
 </html>
+<!---------------------------------
+window.addEventListener("load", function(){
+   loader.style.display = "none";---->

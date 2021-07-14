@@ -28,7 +28,7 @@ html{
 .wrapper .menu-btn{
   position: fixed;
   left: 20px;
-  top: 10px;
+  top: 20px;
   background: #4a4a4a;
   color: #fff;
   height: 45px;
@@ -73,6 +73,7 @@ html{
   overflow: hidden;
   left: -270px;
   transition: all 0.3s ease;
+  margin-top: -2rem;
 }
 #btn:checked ~ #sidebar{
   left: 0;
@@ -175,7 +176,7 @@ html{
     .wrapper .menu-btn{
       position: fixed;
       left: 20px;
-      top: 10px;
+      top: 30px;
       background: #4a4a4a;
       color: #fff;
       height: 45px;
@@ -218,12 +219,12 @@ html{
 
 /* /*----------------------------------------------intro--------------- */
 .introduction-area {
-	margin-bottom: -0.8rem;
-	margin-top: 0 !important;
+	margin-bottom: -4rem;
+	margin-top: -5rem !important;
 }
 
 .introduction-area .welcome-image video {
-	width: 100%;
+	width: 104%;
 }
 @media (min-width: 320px) and (max-width: 600px){
   .introduction-area {
@@ -258,6 +259,7 @@ html{
 
 	color: rgb(15, 15, 15);
 	padding: 4rem 5rem;
+  width: 105%;
 }
 
 .info-para p {
@@ -328,7 +330,9 @@ html{
   text-align: center ;
   padding: 10px;
   
-  top: 200px;
+  top: 100px;
+  margin-bottom: -5rem
+  ;
 }
 .footer-bottom p{
   font-size: 14px;

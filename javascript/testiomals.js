@@ -1,3 +1,5 @@
+
+/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
 //   all ------------------
 function initParadoxWay() {
     "use strict";
